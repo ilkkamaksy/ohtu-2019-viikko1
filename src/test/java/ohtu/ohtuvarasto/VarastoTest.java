@@ -161,6 +161,7 @@ public class VarastoTest {
     
     @Test
     public void konstruktoriLuoKayttokelvottomanVarastonNollaTilavuudella() {
+        // varaston tilavuus on 0
         assertEquals(0, epakelpoVarasto.getTilavuus(), vertailuTarkkuus);
     }
     
@@ -172,6 +173,7 @@ public class VarastoTest {
     
     @Before
     public void setUpVarastoTayteen() {
+        // varasto menee täyteen
         double tilavuus = 10;
         double saldo = tilavuus*2;
         taysiVarasto = new Varasto(tilavuus, saldo);
