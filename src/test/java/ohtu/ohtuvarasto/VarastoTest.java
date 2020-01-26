@@ -161,7 +161,7 @@ public class VarastoTest {
     
     @Test
     public void konstruktoriLuoKayttokelvottomanVarastonNollaTilavuudella() {
-        assertEquals(10, epakelpoVarasto.getTilavuus(), vertailuTarkkuus);
+        assertEquals(0, epakelpoVarasto.getTilavuus(), vertailuTarkkuus);
     }
     
     @After
